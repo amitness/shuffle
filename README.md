@@ -11,5 +11,4 @@ A web app which picks and plays a random song from YouTube.
 ### Contribution
 Feel free to fork and submit bug fixes or even new features. You can file bugs, suggestions and feature requests [here](https://github.com/studenton/shuffle/issues/new).
 
-### License: 
-[MIT License](https://github.com/studenton/shuffle/blob/gh-pages/LICENSE)
+### License: [MIT License](https://github.com/studenton/shuffle/blob/gh-pages/LICENSE)
