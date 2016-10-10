@@ -8,5 +8,10 @@ var playlists = [
       "name": "billboard",
       "id": "PL55713C70BA91BD6E",
       "max": 200
+    },
+    {
+      "name": "latest",
+      "id": "PLFgquLnL59akA2PflFpeQG9L01VFg90wS",
+      "max": 100
     }
   ];
