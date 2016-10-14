@@ -1,6 +1,7 @@
 # shuffle
 A web app which picks and plays a random song from YouTube.
 
+Live version: [Shuffle](http://studenton.com/shuffle/)
 
 ### Usage
 - **Minimal Interface**: All controls are using gestures and keyboard shortcuts.
