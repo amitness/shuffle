@@ -22,6 +22,14 @@
 	<meta name="twitter:description" content="A web app which picks and plays a random song from YouTube.">
 	<meta name="twitter:image" content="">
 	<meta name="twitter:card" content="">
+	<!-- Inline JS -->
+	<script charset="utf-8">
+		$(document).ready(function() {
+			var d = new Date();
+			var n = d.getFullYear();
+			$('#year').html(n);
+		});
+	</script>
 </head>
 <body>
 	<!-- Navigation bar content -->
@@ -38,17 +46,24 @@
       <li class="nav-item">
         <a class="nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-lg">About</a>
       </li>
+			<li class="nav-item">
+        <a class="nav-link" href="https://github.com/studenton/shuffle" target="_blank">Contribute</a>
+      </li>
     </ul>
   </div>
 </nav>
 
 <!-- YouTube iframe  -->
-<div class="responsive-video-div responsive-video-youtube centered-div">
-	<div>
+<div class="container-fluid">
+	<div class="row justify-content-center">
 		<iframe id="player" width="853" height="480" src="about:blank" allowfullscreen></iframe>
+  </div>
+	<!-- Footer -->
+	<div class="footer">
+		<span id="year"></span>. An open source project by <a href="https://github.com/studenton/shuffle/graphs/contributors">contributors</a>
+		hosted on <a href="https://github.com/studenton/shuffle" target="_blank"> on Github</a>.
 	</div>
 </div>
-
 <!-- About modal -->
 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
