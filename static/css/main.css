@@ -7,36 +7,17 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.responsive-video-div>div {
-	position: relative;
-}
-.responsive-video-div iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.responsive-video-youtube {
-	max-width: 853px;
-}
-.responsive-video-youtube>div {
-	padding-top: 56.271981%;
-}
-.thin-text {
-	font: 2rem/1.4 'Quicksand', sans-serif;
-	color: #9E9E9E;
-}
-.centered-div {
-	position: relative;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	margin: auto;
-}
 iframe {
 	border: 0px solid white;
 	background: #000000;
-  	margin-top: 30pt;
+	margin-top: 30pt;
+}
+.footer{
+	margin-top: 30pt;
+	color: grey;
+	text-align: center;
+}
+
+.footer a{
+	color: black;
 }
