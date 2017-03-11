@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Shuffle: Pick a Random YouTube Song</title>
+	<title>Shuffle: Play a Random YouTube Song</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="static/css/main.css" rel="stylesheet" type="text/css" />
@@ -9,45 +9,40 @@
 	<link rel="shortcut icon" href="static/favicon.ico" />
 	<!-- JQuery and Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<!-- Facebook meta tags -->
-	<meta property="og:title" content="Shuffle: The random YouTube song player.">
-	<meta property="og:description" content="A web app which picks and plays a random song from YouTube.">
+	<meta property="og:title" content="Shuffle: Play a random YouTube song.">
+	<meta property="og:description" content="A web app which plays a random song from YouTube.">
 	<meta property="og:image" content="">
 	<meta property="og:url" content="https://studenton.com/shuffle/">
 	<!-- Twitter meta tags  -->
-	<meta name="twitter:title" content="Shuffle: The random YouTube song player.">
-	<meta name="twitter:description" content="A web app which picks and plays a random song from YouTube.">
+	<meta name="twitter:title" content="Shuffle: Play a random YouTube song.">
+	<meta name="twitter:description" content="A web app which plays a random song from YouTube.">
 	<meta name="twitter:image" content="">
 	<meta name="twitter:card" content="">
-	<!-- Inline JS -->
-	<script charset="utf-8">
-		$(document).ready(function() {
-			var d = new Date();
-			var n = d.getFullYear();
-			$('#year').html(n);
-		});
-	</script>
 </head>
 <body>
 	<!-- Navigation bar content -->
 	<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-toggler" aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="/">Shuffle</a>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  <a class="navbar-brand" href="/"><i class="fa fa-random" aria-hidden="true"></i> Shuffle</a>
+  <div class="collapse navbar-collapse" id="navbar-toggler">
     <ul class="navbar-nav mr-auto mt-2 mt-md-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-      </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" data-toggle="modal" data-target=".bd-example-modal-lg">About</a>
+        <a class="nav-link" href="#about" data-toggle="modal" data-target=".about-modal"><i class="fa fa-tag" aria-hidden="true"></i> About</a>
       </li>
 			<li class="nav-item">
-        <a class="nav-link" href="https://github.com/studenton/shuffle" target="_blank">Contribute</a>
+        <a class="nav-link" href="https://github.com/studenton/shuffle" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Contribute</a>
+      </li>
+    </ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li class="nav-item">
+        <a class="nav-link" href="/"><i class="fa fa-refresh" aria-hidden="true"></i> Reload</a>
       </li>
     </ul>
   </div>
@@ -60,12 +55,11 @@
   </div>
 	<!-- Footer -->
 	<div class="footer">
-		<span id="year"></span>. An open source project by <a href="https://github.com/studenton/shuffle/graphs/contributors">contributors</a>
-		hosted on <a href="https://github.com/studenton/shuffle" target="_blank">Github</a>.
+		An open source project on <a href="https://github.com/studenton/shuffle" target="_blank">Github</a>.
 	</div>
 </div>
 <!-- About modal -->
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade about-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
 			<div class="modal-header">
@@ -75,12 +69,11 @@
         </button>
       </div>
 			<div class="modal-body">
-        This is a service that randomly displays a YouTube song on every reload.
+        Plays random YouTube song on every reload.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
-    </div>
     </div>
   </div>
 </div>
@@ -95,7 +88,6 @@
 
   ga('create', 'UA-86557138-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 </body>
 </html>
