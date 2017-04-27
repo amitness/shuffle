@@ -1,7 +1,7 @@
 # Shuffle
 A web app which plays a random song from YouTube.
 
-Live version: [Shuffle](http://studenton.com/shuffle/)
+Live version: [Shuffle](https://amitness.com/shuffle/)
 
 ### Usage
 All controls can be done using gestures and keyboard shortcuts.
