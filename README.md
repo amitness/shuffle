@@ -11,6 +11,6 @@ All controls can be done using gestures and keyboard shortcuts.
 - **Full Screen**: Double click on the player
 
 ### Contribution
-Feel free to fork and submit bug fixes or even new features. You can file bugs, suggestions, and feature requests, [by going to the Issues page](https://github.com/studenton/shuffle/issues/new).
+Feel free to fork and submit bug fixes or even new features. You can file bugs, suggestions, and feature requests, [by going to the Issues page](https://github.com/amitness/shuffle/issues/new).
 
-### License: [MIT License](https://github.com/studenton/shuffle/blob/gh-pages/LICENSE)
+### License: [MIT License](https://github.com/amitness/shuffle/blob/gh-pages/LICENSE)
