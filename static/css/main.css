@@ -12,6 +12,11 @@ iframe {
 	background: #000000;
 	margin-top: 30pt;
 }
+
+.buttonContainer {
+	margin: 30pt;
+}
+
 .footer{
 	margin-top: 30pt;
 	color: grey;
