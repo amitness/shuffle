@@ -47,4 +47,19 @@ $(function () {
       app.iframeSrc = setURL();
     $('#player').attr('src', app.iframeSrc);
   });
+
+  //keybinding for 'N' and 'P' keys
+  $(document).keydown(function(e) {
+    switch(e.which) {
+      case 78: // N for next
+        $('#forward').click();
+        break;
+      case 80: // P for previous
+        $('#back').click();
+        break;
+      default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+  });
+
 });
