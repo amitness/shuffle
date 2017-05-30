@@ -48,14 +48,15 @@ $(function () {
     $('#player').attr('src', app.iframeSrc);
   });
 
-  //keybinding for 'N' and 'P' keys
+  //keybinding for 'A' and 'D' keys
   $(document).keydown(function(e) {
+    console.log(e.which);
     switch(e.which) {
-      case 78: // N for next
-        $('#forward').click();
-        break;
-      case 80: // P for previous
+      case 65: // A for previous
         $('#back').click();
+        break;
+      case 68: // D for next
+        $('#forward').click();
         break;
       default: return; // exit this handler for other keys
     }
