@@ -50,7 +50,6 @@ $(function () {
 
   //keybinding for 'A' and 'D' keys
   $(document).keydown(function(e) {
-    console.log(e.which);
     switch(e.which) {
       case 65: // A for previous
         $('#back').click();
