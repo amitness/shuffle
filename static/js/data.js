@@ -18,5 +18,10 @@ var playlists = [
       "name": "popular-music-videos",
       "id": "PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI",
       "max": 200
+    },
+    {
+      "name": "top-hits-this-week",
+      "id": "PLw-VjHDlEOgvWPpRBs9FRGgJcKpDimTqf",
+      "max": 130
     }
 ];
