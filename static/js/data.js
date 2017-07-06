@@ -13,5 +13,10 @@ var playlists = [
       "name": "latest",
       "id": "PLFgquLnL59akA2PflFpeQG9L01VFg90wS",
       "max": 100
+    },
+    {
+      "name": "popular-music-videos",
+      "id": "PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSI",
+      "max": 200
     }
 ];
