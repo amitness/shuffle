@@ -1,7 +1,7 @@
 # Shuffle
 A web app which plays a random song from YouTube.
 
-![Screenshot of Shuffle](https://cloud.githubusercontent.com/assets/8610709/26560339/53d66fe2-44d3-11e7-9cea-2f920761b0cb.png)
+[![Screenshot of Shuffle](https://cloud.githubusercontent.com/assets/8610709/26560339/53d66fe2-44d3-11e7-9cea-2f920761b0cb.png)](https://amitness.com/shuffle/)
 
 Live version: [Shuffle](https://amitness.com/shuffle/)
 
