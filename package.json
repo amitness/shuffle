@@ -1,0 +1,28 @@
+{
+  "name": "shuffle",
+  "version": "1.0.0",
+  "description": "Randomly play a song from youtube",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "validate": "node-w3c-validator -i index.html -f text"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitness/shuffle.git"
+  },
+  "keywords": [
+    "webapp",
+    "youtube",
+    "jukebox"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amitness/shuffle/issues"
+  },
+  "homepage": "https://github.com/amitness/shuffle#readme",
+  "devDependencies": {
+    "node-w3c-validator": "^1.1.3"
+  }
+}
