@@ -12,6 +12,12 @@ All controls can be done using gestures and keyboard shortcuts.
 - **Pause**: Single click on the player
 - **Full Screen**: Double click on the player
 
+### Development
+To setup the development environment on your local machine, run the following commands in your project root
+
+- `npm install` - This install the required node modules
+- `npm run validate` - This validates the markup in index.html
+
 ### Contribution
 Feel free to fork and submit bug fixes or even new features. You can file bugs, suggestions, and feature requests, by going to the [Issues](https://github.com/amitness/shuffle/issues/new) page.
 
