@@ -13,6 +13,6 @@ All controls can be done using gestures and keyboard shortcuts.
 - **Full Screen**: Double click on the player
 
 ### Contribution
-Feel free to fork and submit bug fixes or even new features. You can file bugs, suggestions, and feature requests, by going to the [Issues](https://github.com/amitness/shuffle/issues/new) page.
+Feel free to fork and submit bug fixes or even new features. You can file bugs, suggestions, and feature requests, by going to the [issues](https://github.com/amitness/shuffle/issues/new) page.
 
 ### License: [MIT](https://github.com/amitness/shuffle/blob/gh-pages/LICENSE)
