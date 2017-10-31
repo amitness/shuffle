@@ -47,4 +47,19 @@ $(function () {
       app.iframeSrc = setURL();
     $('#player').attr('src', app.iframeSrc);
   });
+
+  //keybinding for 'A' and 'D' keys
+  $(document).keydown(function(e) {
+    switch(e.which) {
+      case 65: // A for previous
+        $('#back').click();
+        break;
+      case 68: // D for next
+        $('#forward').click();
+        break;
+      default: return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+  });
+
 });
