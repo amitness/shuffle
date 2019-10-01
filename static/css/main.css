@@ -25,3 +25,21 @@ iframe {
 .footer a {
 	color: black;
 }
+
+nav.dark {
+	background: #000000 !important;
+}
+
+body.dark {
+	background: #4d4d4d;
+}
+
+.btn.btn-default.dark {
+	background: transparent !important;
+	color: white !important;
+}
+
+.modal-header.dark, .modal-body.dark, .modal-footer.dark {
+	background: #4d4d4d;
+	color: #fff;
+}

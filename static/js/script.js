@@ -47,4 +47,13 @@ $(function () {
       app.iframeSrc = setURL();
     $('#player').attr('src', app.iframeSrc);
   });
+
+  $("#dark-mode").click(function(){
+    $("nav").toggleClass("dark");
+    $("body").toggleClass("dark");
+    $(".btn.btn-default").toggleClass("dark");
+    $(".modal-header").toggleClass("dark");
+    $(".modal-body").toggleClass("dark");
+    $(".modal-footer").toggleClass("dark");
+  });
 });
